@@ -63,7 +63,7 @@ const InduvisualBrandingThree = () => {
     }
 
     emailjs
-      .sendForm("service_6h9xaia", "template_4oix8d5", form.current, {
+      .sendForm("service_plxd73w", "template_4oix8d5", form.current, {
         publicKey: "MaxR-SmKU3X9z0oRj",
       })
       .then(

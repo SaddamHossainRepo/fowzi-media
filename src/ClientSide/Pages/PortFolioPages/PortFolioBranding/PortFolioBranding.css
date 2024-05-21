@@ -4,3 +4,26 @@
     color: white;
     border-radius: none;
 }
+
+
+/* .titleSubHeadingEdited {
+    @apply 2xl:text-[30px] 2xl:leading-[60px] 2xl:pb-[60px] 
+    xl:text-[30px] xl:leading-[48px] xl:pb-[44px] 
+    lg:text-[25px] lg:leading-[40px] lg:pb-[40px]
+    md:text-[20px] md:leading-[20px] md:pb-[35px]
+    text-[20px] leading-[10px] pb-[25px]
+   
+    text-white font-glaCailBold;
+  } */
+
+
+.titleSubHeadingEdited {
+    @apply 2xl:text-[30px] 2xl:leading-[60px] 
+    xl:text-[30px] xl:leading-[48px] 
+    lg:text-[20px] lg:leading-[40px] 
+    md:text-[20px] md:leading-[20px]
+    text-[20px] leading-[10px]
+   
+    /* -------Common Styles ------ */
+    text-white font-glaCailBold;
+  }

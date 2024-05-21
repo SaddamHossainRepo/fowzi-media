@@ -93,6 +93,11 @@ const router = createBrowserRouter([
     path: "/PortFolioVideoShamilMirza",
     element : <PortFolioVideoTeo></PortFolioVideoTeo>
   },
+  // {
+  //   path: "/PortFolioVideoTeo",
+  //   // path: "/PortFolioVideoShamilMirza",
+  //   element : <PortFolioVideoTeo></PortFolioVideoTeo>
+  // },
   {
     path: "/PortFolioVideoaJnnah",
     element : <PortFolioVideoaJnnah></PortFolioVideoaJnnah>

@@ -64,7 +64,7 @@ const VideoGraphy = () => {
     }
 
     emailjs
-      .sendForm('service_6h9xaia', 'template_4oix8d5', form.current, {
+      .sendForm('service_plxd73w', 'template_4oix8d5', form.current, {
         publicKey: 'MaxR-SmKU3X9z0oRj',
       })
       .then(
@@ -587,10 +587,12 @@ const VideoGraphy = () => {
                 </div>
               </div>
             </Link>
-            <Link to="/PortFolioVideoTeo">
+            {/* <Link to="/PortFolioVideoTeo"> */}
+            <Link to="/PortFolioVideoShamilMirza">
               <div className="relative group">
                 <div>
-                  <img className="WorkImgThree" src="/videoL3.png" alt="" />
+                  {/* <img className="WorkImgThree" src="/videoL3.png" alt="" /> */}
+                  <img className="WorkImgThree" src="/portVidThree.png" alt="" />
                 </div>
                 <div className="w-full absolute bottom-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                   <div

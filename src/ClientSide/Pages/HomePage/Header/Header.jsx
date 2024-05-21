@@ -93,7 +93,7 @@ const Header = () => {
     }
 
     emailjs
-      .sendForm("service_6h9xaia", "template_4oix8d5", form.current, {
+      .sendForm("service_plxd73w", "template_4oix8d5", form.current, {
         publicKey: "MaxR-SmKU3X9z0oRj",
       })
       .then(
@@ -312,12 +312,12 @@ const Header = () => {
             alt="brand Logo"
           />
           <p className="text-center heroSectionPara">
-            We combine artistry with strategy, creating digital solutions
+            We combine artistry with strategy, creating digital solutions.
           </p>
 
           {/* =====for mobile ======= */}
           <p className="text-center heroSectionParaMobile">
-            We combine artistry with strategy, creating digital solutions
+            We combine artistry with strategy, creating digital solutions.
           </p>
           <button className="headerHireBtn" onClick={revealPrice}>
             Hire Us

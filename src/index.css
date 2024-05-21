@@ -37,6 +37,13 @@ input[type=number] {
     md:px-[50px] md:pt-[100px]
     px-[20px] pt-[100px];
   }
+  .leftRightCommon{
+    @apply 2xl:px-[150px] 2xl:pt-[100px] 
+    xl:px-[80px] xl:pt-[100px]
+    lg:px-[70px] lg:pt-[60px]
+    md:px-[50px] md:pt-[50px]
+    px-[20px] pt-[50px];
+  }
 
   .titleSubHeading {
     @apply 2xl:text-[50px] 2xl:leading-[60px] 2xl:pb-[60px] 
@@ -170,6 +177,16 @@ input[type=number] {
     text-[20px] mt-[-5px]
     /* ---------Common Style ---------- */
     text-white font-glaCailBold;
+  }
+ 
+  .servicesParagraph {
+    @apply 2xl:text-[30px] 2xl:leading-[50px] 
+    xl:text-[30px] xl:leading-[40px] 
+    md:text-[20px] md:leading-[30px]  
+    lg:text-[20px] 
+    text-[20px] mt-[-5px]
+    /* ---------Common Style ---------- */
+    text-white font-glacialBase;
   }
 
   .serviceCardParent {

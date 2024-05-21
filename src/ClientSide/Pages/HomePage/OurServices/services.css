@@ -25,3 +25,15 @@
   opacity: 1;
   transform: scale(1.1); /* Adjust the scale factor for zoom effect */
 }
+
+@media (max-width: 500px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) {
+  .show-on-mobile {
+    display: none;
+  }
+}

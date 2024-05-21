@@ -44,13 +44,13 @@ const OurServices = () => {
     },
 
 
-    {
-      heading: "Photography",
-      // description: "For over a decade, we've remained steadfast in our commitment to delivering breathtaking visuals.",
-      imgSrc: "/pFive.png",
-      icon: <FaCamera className="2xl:text-[27px] xl:text-[22px]" />,
-      route: "/photography"
-    },
+    // {
+    //   heading: "Photography",
+    //   // description: "For over a decade, we've remained steadfast in our commitment to delivering breathtaking visuals.",
+    //   imgSrc: "/pFive.png",
+    //   icon: <FaCamera className="2xl:text-[27px] xl:text-[22px]" />,
+    //   route: "/photography"
+    // },
 
 
   ];
@@ -85,6 +85,7 @@ const OurServices = () => {
 
           <div className="overflow-hidden xl:rounded-[50px] 2xl:rounded-[25px] rounded-[10px]">
             <h2 className="titleSubHeading  md:block  xl:hidden 2xl:hidden">Our Services</h2>
+            <p className="text-white text-[20px] show-on-mobile servicesParagraph mb-6">From web development to branding, videography, and photography-unlock the power of seamless creativity with our integrated solutions.</p>
             <img
               className={` servicesImg  object-cover  ${animateLeftToRight ? 'leftToRightAnimation rounded-[25px]' : 'rounded-[25px]'}`}
               src={serviceCards[activeCardIndex].imgSrc}
@@ -94,13 +95,14 @@ const OurServices = () => {
 
           {/* ============ For large screen  ============ */}
           <div className="serviceInfoParent">
-            <h2 className="hidden  servicesHeading xl:mb-[44px] 2xl:mb-[60px] mb-[20px] md:mb-[40px]  xl:block 2xl:block">Our Services</h2>
-
+            {/* <h2 className="hidden  servicesHeading xl:mb-[44px] 2xl:mb-[60px] mb-[20px] md:mb-[40px]  xl:block 2xl:block">Our Services</h2> */}
+            <h2 className="hidden  servicesHeading xl:mb-[30px] 2xl:mb-[40px] md:mb-[10px] mb-[20px]   xl:block 2xl:block">Our Services</h2>
+            <p className="text-white servicesParagraph mb-4 hide-on-mobile">From web development to branding, videography, and photography-unlock the power of seamless creativity with our integrated solutions.</p>
             <div className="grid  gap-[10px] mt-[20px] 
         2xl:grid 2xl:grid-cols-1 2xl:gap-0 2xl:mt-0
         xl:grid xl:grid-cols-1 xl:gap-0 xl:mt-0
         lg:grid lg:grid-cols-1 lg:gap-[20px] lg:mt-[70px]
-        md:grid md:grid-cols-1 md:gap-[15px] md:mt-[100px]
+        md:grid md:grid-cols-1 md:gap-[15px] md:mt-[40px]
         
 
         ">

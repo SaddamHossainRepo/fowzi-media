@@ -70,7 +70,7 @@ const PortFolioBranding = () => {
     }
 
     emailjs
-      .sendForm("service_6h9xaia", "template_4oix8d5", form.current, {
+      .sendForm("service_plxd73w", "template_4oix8d5", form.current, {
         publicKey: "MaxR-SmKU3X9z0oRj",
       })
       .then(
@@ -273,10 +273,10 @@ const PortFolioBranding = () => {
               md:flex md:gap-[10px] md:justify-start
 
                ">
-                <Tab><h2 className="titleSubHeading 2xl:pb-[10px] xl:pb-[5px] lg:pb-[3px] md:pb-[2px] pb-[2px]">All</h2></Tab>
-                <Tab><h2 className="titleSubHeading 2xl:pb-[10px] xl:pb-[5px] lg:pb-[3px] md:pb-[2px] pb-[2px]">Healthcare</h2></Tab>
-                <Tab><h2 className="titleSubHeading 2xl:pb-[10px] xl:pb-[5px] lg:pb-[3px] md:pb-[2px] pb-[2px]">Non-Profit</h2></Tab>
-                <Tab><h2 className="titleSubHeading 2xl:pb-[10px] xl:pb-[5px] lg:pb-[3px] md:pb-[2px] pb-[2px]">Restaurants</h2></Tab>
+                <Tab><h2 className="titleSubHeadingEdited 2xl:pb-[10px] xl:pb-[5px] lg:pb-[3px] md:pb-[2px] pb-[2px]">All</h2></Tab>
+                <Tab><h2 className="titleSubHeadingEdited 2xl:pb-[10px] xl:pb-[5px] lg:pb-[3px] md:pb-[2px] pb-[2px]">Healthcare</h2></Tab>
+                <Tab><h2 className="titleSubHeadingEdited 2xl:pb-[10px] xl:pb-[5px] lg:pb-[3px] md:pb-[2px] pb-[2px]">Non-Profit</h2></Tab>
+                <Tab><h2 className="titleSubHeadingEdited 2xl:pb-[10px] xl:pb-[5px] lg:pb-[3px] md:pb-[2px] pb-[2px]">Restaurants</h2></Tab>
               </TabList>
               {/* ------------------- All sections ----------------- */}
               <TabPanel>
@@ -496,62 +496,86 @@ const PortFolioBranding = () => {
                            md:grid-cols-3 md:gap-x-[15px]
                            justify-between w-full">
 
-                        {/* ==========card One ====== */}
-                        <Link to="https://eyffa.org/" target="_blank">
+                            {/* ==========card One ====== */}
+                        <Link>
                           <div className="relative cursor-pointer">
                             <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                              <div >
+                              <div>
                                 <div className="PortraitImgOne ">
-                                  <img className="h-full w-full object-cover" src="/non1.webp" alt="" />
+                                  <img
+                                    className="h-full w-full object-cover"
+                                    src="/ifrah-jamah.jpg"
+                                    alt=""
+                                  />
                                 </div>
                                 <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                   <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                    <h5 className="overlayText">View Website</h5>
-                                    <p><FaArrowRightLong></FaArrowRightLong></p>
+                                    <h5 className="overlayText">View More</h5>
+                                    <p>
+                                      <FaArrowRightLong></FaArrowRightLong>
+                                    </p>
                                   </div>
                                 </div>
                               </div>
-                              {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                              <h4 className="potraitBottomText rounded-[15px] text-center">
+                              Ifrah Jama
+                              </h4>
                             </div>
                           </div>
                         </Link>
 
                         {/* ==========card Two ====== */}
-                        <Link to="https://islamcollective.org/" target="_blank">
+                        <Link>
                           <div className="relative cursor-pointer">
                             <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                              <div >
+                              <div>
                                 <div className="PortraitImgOne ">
-                                  <img className="h-full w-full object-cover" src="/non2.webp" alt="" />
+                                  <img
+                                    className="h-full w-full object-cover"
+                                    src="/mak-community.png"
+                                    alt=""
+                                  />
                                 </div>
                                 <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                   <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                    <h5 className="overlayText">View Website</h5>
-                                    <p><FaArrowRightLong></FaArrowRightLong></p>
+                                    <h5 className="overlayText">View More</h5>
+                                    <p>
+                                      <FaArrowRightLong></FaArrowRightLong>
+                                    </p>
                                   </div>
                                 </div>
                               </div>
-                              {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                              <h4 className="potraitBottomText rounded-[15px] text-center">
+                              Mak Community
+                              </h4>
                             </div>
                           </div>
                         </Link>
 
                         {/* ==========card Three ====== */}
-                        <Link to="https://washingtontoe.com/" target="_blank">
+                        <Link>
                           <div className="relative cursor-pointer">
                             <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                              <div >
+                              <div>
                                 <div className="PortraitImgOne ">
-                                  <img className="h-full w-full object-cover" src="/non3.webp" alt="" />
+                                  <img
+                                    className="h-full w-full object-cover"
+                                    src="/rondo-adult-service.jpg"
+                                    alt=""
+                                  />
                                 </div>
                                 <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                   <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                    <h5 className="overlayText">View Website</h5>
-                                    <p><FaArrowRightLong></FaArrowRightLong></p>
+                                    <h5 className="overlayText">View More</h5>
+                                    <p>
+                                      <FaArrowRightLong></FaArrowRightLong>
+                                    </p>
                                   </div>
                                 </div>
                               </div>
-                              {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                              <h4 className="potraitBottomText rounded-[15px] text-center">
+                              Rondo Adult Day Services
+                              </h4>
                             </div>
                           </div>
                         </Link>
@@ -569,60 +593,87 @@ const PortFolioBranding = () => {
 
                     <Slider {...settings} >
                       {/* ==========card One ====== */}
-                      <Link to="https://eyffa.org/" target="_blank">
+                      {/* <Link to="https://eyffa.org/" target="_blank"> */}
+                      <Link>
                         <div className="relative cursor-pointer ">
                           <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                            <div >
+                            <div>
                               <div className="PortraitImgOne ">
-                                <img className="h-full w-full object-cover" src="/non1.webp" alt="" />
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/ifrah-jamah.jpg"
+                                  alt=""
+                                />
                               </div>
                               <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                 <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                  <h5 className="overlayText">View Website</h5>
-                                  <p><FaArrowRightLong></FaArrowRightLong></p>
+                                  {/* <h5 className="overlayText">View Website</h5> */}
+                                  <p>
+                                    <FaArrowRightLong></FaArrowRightLong>
+                                  </p>
                                 </div>
                               </div>
                             </div>
-                            {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                            <h4 className="potraitBottomText rounded-[15px] text-center">
+                            Ifrah Jamah
+                            </h4>
                           </div>
                         </div>
                       </Link>
 
                       {/* ==========card Two ====== */}
-                      <Link to="https://islamcollective.org/" target="_blank">
-                        <div className="relative cursor-pointer">
+                      {/* <Link to="https://islamcollective.org/" target="_blank"> */}
+                      <Link>
+                        <div className="relative cursor-pointer ">
                           <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                            <div >
+                            <div>
                               <div className="PortraitImgOne ">
-                                <img className="h-full w-full object-cover" src="/non2.webp" alt="" />
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/mak-community.png"
+                                  alt=""
+                                />
                               </div>
                               <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                 <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                  <h5 className="overlayText">View Website</h5>
-                                  <p><FaArrowRightLong></FaArrowRightLong></p>
+                                  {/* <h5 className="overlayText">View Website</h5> */}
+                                  <p>
+                                    <FaArrowRightLong></FaArrowRightLong>
+                                  </p>
                                 </div>
                               </div>
                             </div>
-                            {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                            <h4 className="potraitBottomText rounded-[15px] text-center">
+                            Mak Community
+                            </h4>
                           </div>
                         </div>
                       </Link>
                       {/* ==========card Three ====== */}
-                      <Link to="https://washingtontoe.com/" target="_blank">
-                        <div className="relative cursor-pointer">
+                      {/* <Link to="https://washingtontoe.com/" target="_blank"> */}
+                      <Link>
+                        <div className="relative cursor-pointer ">
                           <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                            <div >
+                            <div>
                               <div className="PortraitImgOne ">
-                                <img className="h-full w-full object-cover" src="/non3.webp" alt="" />
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/rondo-adult-service.jpg"
+                                  alt=""
+                                />
                               </div>
                               <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                 <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                  <h5 className="overlayText">View Website</h5>
-                                  <p><FaArrowRightLong></FaArrowRightLong></p>
+                                  {/* <h5 className="overlayText">View Website</h5> */}
+                                  <p>
+                                    <FaArrowRightLong></FaArrowRightLong>
+                                  </p>
                                 </div>
                               </div>
                             </div>
-                            {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                            <h4 className="potraitBottomText rounded-[15px] text-center">
+                            Rondo Adult Day Services
+                            </h4>
                           </div>
                         </div>
                       </Link>
@@ -651,63 +702,89 @@ const PortFolioBranding = () => {
                            justify-between w-full">
 
                         {/* ==========card One ====== */}
-                        <Link to='https://almasirestaurant.com/' target="_blank">
+                        {/* <Link to='https://almasirestaurant.com/' target="_blank"> */}
+                        <Link>
                           <div className="relative cursor-pointer">
                             <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                              <div >
+                              <div>
                                 <div className="PortraitImgOne ">
-                                  <img className="h-full w-full object-cover" src="/almasi.jpg" alt="" />
+                                  <img
+                                    className="h-full w-full object-cover"
+                                    src="/feuling-education.jpg"
+                                    alt=""
+                                  />
                                 </div>
                                 <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                   <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                    <h5 className="overlayText">View Website</h5>
-                                    <p><FaArrowRightLong></FaArrowRightLong></p>
+                                    <h5 className="overlayText">View More</h5>
+                                    <p>
+                                      <FaArrowRightLong></FaArrowRightLong>
+                                    </p>
                                   </div>
                                 </div>
                               </div>
-                              {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                              <h4 className="potraitBottomText rounded-[15px] text-center">
+                              Lux Catering
+                              </h4>
                             </div>
                           </div>
                         </Link>
 
                         {/* ==========card Two ====== */}
 
-                        <Link to="http://caweyslounge.com/" target="_blank">
-
+                        {/* <Link to="http://caweyslounge.com/" target="_blank"> */}
+                        <Link>
                           <div className="relative cursor-pointer">
                             <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                              <div >
+                              <div>
                                 <div className="PortraitImgOne ">
-                                  <img className="h-full w-full object-cover" src="/cawes.jpg" alt="" />
+                                  <img
+                                    className="h-full w-full object-cover"
+                                    src="/admed-sse.png"
+                                    alt=""
+                                  />
                                 </div>
                                 <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                   <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                    <h5 className="overlayText">View Website</h5>
-                                    <p><FaArrowRightLong></FaArrowRightLong></p>
+                                    <h5 className="overlayText">View More</h5>
+                                    <p>
+                                      <FaArrowRightLong></FaArrowRightLong>
+                                    </p>
                                   </div>
                                 </div>
                               </div>
-                              {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                              <h4 className="potraitBottomText rounded-[15px] text-center">
+                              Awad For Puntland
+                              </h4>
                             </div>
                           </div>
                         </Link>
 
                         {/* ==========card Three ====== */}
-                        <Link to="https://capitolcafe.com/" target="_blank">
+                        {/* <Link to="https://capitolcafe.com/" target="_blank"> */}
+                        <Link>
                           <div className="relative cursor-pointer">
                             <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                              <div >
+                              <div>
                                 <div className="PortraitImgOne ">
-                                  <img className="h-full w-full object-cover" src="/capitol.jpg" alt="" />
+                                  <img
+                                    className="h-full w-full object-cover"
+                                    src="/optimal-health.png"
+                                    alt=""
+                                  />
                                 </div>
                                 <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                   <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                    <h5 className="overlayText">View Website</h5>
-                                    <p><FaArrowRightLong></FaArrowRightLong></p>
+                                    <h5 className="overlayText">View More</h5>
+                                    <p>
+                                      <FaArrowRightLong></FaArrowRightLong>
+                                    </p>
                                   </div>
                                 </div>
                               </div>
-                              {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                              <h4 className="potraitBottomText rounded-[15px] text-center">
+                              Optimal Health
+                              </h4>
                             </div>
                           </div>
                         </Link>
@@ -725,61 +802,88 @@ const PortFolioBranding = () => {
                     <Slider {...settings} >
                       {/* ==========card One ====== */}
 
-                      <Link to="https://almasirestaurant.com/" target="_blank" >
+                      {/* <Link to="https://almasirestaurant.com/" target="_blank" > */}
+                      <Link>
                         <div className="relative cursor-pointer ">
                           <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                            <div >
+                            <div>
                               <div className="PortraitImgOne ">
-                                <img className="h-full w-full object-cover" src="/almasi.jpg" alt="" />
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/feuling-education.jpg"
+                                  alt=""
+                                />
                               </div>
                               <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                 <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                  <h5 className="overlayText">View Website</h5>
-                                  <p><FaArrowRightLong></FaArrowRightLong></p>
+                                  {/* <h5 className="overlayText">View Website</h5> */}
+                                  <p>
+                                    <FaArrowRightLong></FaArrowRightLong>
+                                  </p>
                                 </div>
                               </div>
                             </div>
-                            {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                            <h4 className="potraitBottomText rounded-[15px] text-center">
+                            Lux Catering
+                            </h4>
                           </div>
                         </div>
                       </Link>
 
                       {/* ==========card Two ====== */}
-                      <Link to="http://caweyslounge.com/" target="_blank" >
-                        <div className="relative cursor-pointer">
+                      {/* <Link to="http://caweyslounge.com/" target="_blank" > */}
+                      <Link>
+                        <div className="relative cursor-pointer ">
                           <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                            <div >
+                            <div>
                               <div className="PortraitImgOne ">
-                                <img className="h-full w-full object-cover" src="/cawes.jpg" alt="" />
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/admed-sse.png"
+                                  alt=""
+                                />
                               </div>
                               <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                 <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                  <h5 className="overlayText">View Website</h5>
-                                  <p><FaArrowRightLong></FaArrowRightLong></p>
+                                  {/* <h5 className="overlayText">View Website</h5> */}
+                                  <p>
+                                    <FaArrowRightLong></FaArrowRightLong>
+                                  </p>
                                 </div>
                               </div>
                             </div>
-                            {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                            <h4 className="potraitBottomText rounded-[15px] text-center">
+                            Awad For Puntland
+                            </h4>
                           </div>
                         </div>
                       </Link>
 
                       {/* ==========card Three ====== */}
-                      <Link to="https://capitolcafe.com/" target="_blank">
-                        <div className="relative cursor-pointer">
+                      {/* <Link to="https://capitolcafe.com/" target="_blank"> */}
+                      <Link>
+                        <div className="relative cursor-pointer ">
                           <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                            <div >
+                            <div>
                               <div className="PortraitImgOne ">
-                                <img className="h-full w-full object-cover" src="/capitol.jpg" alt="" />
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/optimal-health.png"
+                                  alt=""
+                                />
                               </div>
                               <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                 <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                  <h5 className="overlayText">View Website</h5>
-                                  <p><FaArrowRightLong></FaArrowRightLong></p>
+                                  {/* <h5 className="overlayText">View Website</h5> */}
+                                  <p>
+                                    <FaArrowRightLong></FaArrowRightLong>
+                                  </p>
                                 </div>
                               </div>
                             </div>
-                            {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                            <h4 className="potraitBottomText rounded-[15px] text-center">
+                            Optimal Health
+                            </h4>
                           </div>
                         </div>
                       </Link>
@@ -807,61 +911,88 @@ const PortFolioBranding = () => {
                            justify-between w-full">
 
                         {/* ==========card One ====== */}
-                        <Link to="https://dignityhomehs.com/" target="_blank">
+                        {/* <Link to="https://dignityhomehs.com/" target="_blank"> */}
+                        <Link>
                           <div className="relative cursor-pointer">
                             <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                              <div >
+                              <div>
                                 <div className="PortraitImgOne ">
-                                  <img className="h-full w-full object-cover" src="/dignity.jpg" alt="" />
+                                  <img
+                                    className="h-full w-full object-cover"
+                                    src="/caweys-lounge.png"
+                                    alt=""
+                                  />
                                 </div>
                                 <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                   <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                    <h5 className="overlayText">View Website</h5>
-                                    <p><FaArrowRightLong></FaArrowRightLong></p>
+                                    <h5 className="overlayText">View More</h5>
+                                    <p>
+                                      <FaArrowRightLong></FaArrowRightLong>
+                                    </p>
                                   </div>
                                 </div>
                               </div>
-                              {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                              <h4 className="potraitBottomText rounded-[15px] text-center">
+                              Caweys Lounge
+                              </h4>
                             </div>
                           </div>
                         </Link>
 
                         {/* ==========card Two ====== */}
-                        <Link to="https://integrityqualitycare.com/" target="_blank">
+                        {/* <Link to="https://integrityqualitycare.com/" target="_blank"> */}
+                        <Link>
                           <div className="relative cursor-pointer">
                             <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                              <div >
+                              <div>
                                 <div className="PortraitImgOne ">
-                                  <img className="h-full w-full object-cover" src="/integrity.jpg" alt="" />
+                                  <img
+                                    className="h-full w-full object-cover"
+                                    src="/golden-heart.png"
+                                    alt=""
+                                  />
                                 </div>
                                 <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                   <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                    <h5 className="overlayText">View Website</h5>
-                                    <p><FaArrowRightLong></FaArrowRightLong></p>
+                                    <h5 className="overlayText">View More</h5>
+                                    <p>
+                                      <FaArrowRightLong></FaArrowRightLong>
+                                    </p>
                                   </div>
                                 </div>
                               </div>
-                              {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                              <h4 className="potraitBottomText rounded-[15px] text-center">
+                              Golden Heart
+                              </h4>
                             </div>
                           </div>
                         </Link>
 
                         {/* ==========card Three ====== */}
-                        <Link to="https://goshenhservices.com/" target="_blank">
+                        {/* <Link to="https://goshenhservices.com/" target="_blank"> */}
+                        <Link>
                           <div className="relative cursor-pointer">
                             <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                              <div >
+                              <div>
                                 <div className="PortraitImgOne ">
-                                  <img className="h-full w-full object-cover" src="/goshen.jpg" alt="" />
+                                  <img
+                                    className="h-full w-full object-cover"
+                                    src="/islam-collective.png"
+                                    alt=""
+                                  />
                                 </div>
                                 <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                   <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                    <h5 className="overlayText">View Website</h5>
-                                    <p><FaArrowRightLong></FaArrowRightLong></p>
+                                    <h5 className="overlayText">View More</h5>
+                                    <p>
+                                      <FaArrowRightLong></FaArrowRightLong>
+                                    </p>
                                   </div>
                                 </div>
                               </div>
-                              {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                              <h4 className="potraitBottomText rounded-[15px] text-center">
+                              Islam Collective
+                              </h4>
                             </div>
                           </div>
                         </Link>
@@ -879,60 +1010,87 @@ const PortFolioBranding = () => {
                   <div className="block md:hidden lg:hidden xl:hidden 2xl:hidden pt-[60px]">
                     <Slider {...settings} >
                       {/* ==========card One ====== */}
-                      <Link to="https://dignityhomehs.com/" target="_blank">
+                      {/* <Link to="https://dignityhomehs.com/" target="_blank"> */}
+                      <Link>
                         <div className="relative cursor-pointer ">
                           <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                            <div >
+                            <div>
                               <div className="PortraitImgOne ">
-                                <img className="h-full w-full object-cover" src="/dignity.jpg" alt="" />
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/caweys-lounge.png"
+                                  alt=""
+                                />
                               </div>
                               <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                 <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                  <h5 className="overlayText">View Website</h5>
-                                  <p><FaArrowRightLong></FaArrowRightLong></p>
+                                  {/* <h5 className="overlayText">View Website</h5> */}
+                                  <p>
+                                    <FaArrowRightLong></FaArrowRightLong>
+                                  </p>
                                 </div>
                               </div>
                             </div>
-                            {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                            <h4 className="potraitBottomText rounded-[15px] text-center">
+                            Caweys Lounge
+                            </h4>
                           </div>
                         </div>
                       </Link>
 
                       {/* ==========card Two ====== */}
-                      <Link to="https://integrityqualitycare.com/" target="_blank">
-                        <div className="relative cursor-pointer">
+                      {/* <Link to="https://integrityqualitycare.com/" target="_blank"> */}
+                      <Link>
+                        <div className="relative cursor-pointer ">
                           <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                            <div >
+                            <div>
                               <div className="PortraitImgOne ">
-                                <img className="h-full w-full object-cover" src="/integrity.jpg" alt="" />
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/golden-heart.png"
+                                  alt=""
+                                />
                               </div>
                               <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                 <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                  <h5 className="overlayText">View Website</h5>
-                                  <p><FaArrowRightLong></FaArrowRightLong></p>
+                                  {/* <h5 className="overlayText">View Website</h5> */}
+                                  <p>
+                                    <FaArrowRightLong></FaArrowRightLong>
+                                  </p>
                                 </div>
                               </div>
                             </div>
-                            {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                            <h4 className="potraitBottomText rounded-[15px] text-center">
+                            Golden Heart
+                            </h4>
                           </div>
                         </div>
                       </Link>
                       {/* ==========card Three ====== */}
-                      <Link to="https://goshenhservices.com/" target="_blank">
-                        <div className="relative cursor-pointer">
+                      {/* <Link to="https://goshenhservices.com/" target="_blank"> */}
+                      <Link>
+                        <div className="relative cursor-pointer ">
                           <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                            <div >
+                            <div>
                               <div className="PortraitImgOne ">
-                                <img className="h-full w-full object-cover" src="/goshen.jpg" alt="" />
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/islam-collective.png"
+                                  alt=""
+                                />
                               </div>
                               <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                 <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                  <h5 className="overlayText">View Website</h5>
-                                  <p><FaArrowRightLong></FaArrowRightLong></p>
+                                  {/* <h5 className="overlayText">View Website</h5> */}
+                                  <p>
+                                    <FaArrowRightLong></FaArrowRightLong>
+                                  </p>
                                 </div>
                               </div>
                             </div>
-                            {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                            <h4 className="potraitBottomText rounded-[15px] text-center">
+                            Islam Collective
+                            </h4>
                           </div>
                         </div>
                       </Link>
@@ -947,6 +1105,7 @@ const PortFolioBranding = () => {
               </TabPanel>
 
               {/* -----------------------Healthcare ------------------ */}
+              {/* -----------------------healthcare sorting------------------ */}
               <TabPanel>
                 <div className="hidden md:block lg:block xl:block 2xl:block 2xl:pt-[100px] xl:pt-[50px] lg:pt-[50px] md:pt-[30px]">
                   <div className="
@@ -964,21 +1123,30 @@ const PortFolioBranding = () => {
 
                       {/* ==========card One ====== */}
                       <Zoom >
-                        <Link to="https://dignityhomehs.com/" target="_blank">
+                        {/* <Link to="https://dignityhomehs.com/" target="_blank"> */}
+                        <Link>
                           <div className="relative cursor-pointer">
                             <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                              <div >
+                              <div>
                                 <div className="PortraitImgOne ">
-                                  <img className="h-full w-full object-cover" src="/dignity.jpg" alt="" />
+                                  <img
+                                    className="h-full w-full object-cover"
+                                    src="/golden-heart.png"
+                                    alt=""
+                                  />
                                 </div>
                                 <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                   <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                    <h5 className="overlayText">View Website</h5>
-                                    <p><FaArrowRightLong></FaArrowRightLong></p>
+                                    <h5 className="overlayText">View More</h5>
+                                    <p>
+                                      <FaArrowRightLong></FaArrowRightLong>
+                                    </p>
                                   </div>
                                 </div>
                               </div>
-                              {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                              <h4 className="potraitBottomText rounded-[15px] text-center">
+                              Golden Heart
+                              </h4>
                             </div>
                           </div>
                         </Link>
@@ -986,47 +1154,37 @@ const PortFolioBranding = () => {
 
                       {/* ==========card Two ====== */}
                       <Zoom delay={200}>
-                        <Link to="https://integrityqualitycare.com/" target="_blank">
+                      <Link>
                           <div className="relative cursor-pointer">
                             <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                              <div >
+                              <div>
                                 <div className="PortraitImgOne ">
-                                  <img className="h-full w-full object-cover" src="/integrity.jpg" alt="" />
+                                  <img
+                                    className="h-full w-full object-cover"
+                                    src="/optimal-health.png"
+                                    alt=""
+                                  />
                                 </div>
                                 <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                   <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                    <h5 className="overlayText">View Website</h5>
-                                    <p><FaArrowRightLong></FaArrowRightLong></p>
+                                    <h5 className="overlayText">View More</h5>
+                                    <p>
+                                      <FaArrowRightLong></FaArrowRightLong>
+                                    </p>
                                   </div>
                                 </div>
                               </div>
-                              {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                              <h4 className="potraitBottomText rounded-[15px] text-center">
+                              Optimal Health
+                              </h4>
                             </div>
                           </div>
                         </Link>
                       </Zoom>
 
                       {/* ==========card Three ====== */}
-                      <Zoom delay={300}>
-                        <Link to="https://goshenhservices.com/" target="_blank">
-                          <div className="relative cursor-pointer">
-                            <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                              <div >
-                                <div className="PortraitImgOne ">
-                                  <img className="h-full w-full object-cover" src="/goshen.jpg" alt="" />
-                                </div>
-                                <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                                  <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                    <h5 className="overlayText">View Website</h5>
-                                    <p><FaArrowRightLong></FaArrowRightLong></p>
-                                  </div>
-                                </div>
-                              </div>
-                              {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                            </div>
-                          </div>
-                        </Link>
-                      </Zoom>
+                      
+                      
 
                     </div>
 
@@ -1041,63 +1199,65 @@ const PortFolioBranding = () => {
                 <div className="block md:hidden lg:hidden xl:hidden 2xl:hidden pt-[50px]">
                   <Slider {...settings} >
                     {/* ==========card One ====== */}
-                    <Link to="https://dignityhomehs.com/" target="_blank">
-                      <div className="relative cursor-pointer ">
-                        <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                          <div >
-                            <div className="PortraitImgOne ">
-                              <img className="h-full w-full object-cover" src="/dignity.jpg" alt="" />
-                            </div>
-                            <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                              <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                <h5 className="overlayText">View Website</h5>
-                                <p><FaArrowRightLong></FaArrowRightLong></p>
+                    <Link>
+                        <div className="relative cursor-pointer ">
+                          <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
+                            <div>
+                              <div className="PortraitImgOne ">
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/golden-heart.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                                <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                                  {/* <h5 className="overlayText">View Website</h5> */}
+                                  <p>
+                                    <FaArrowRightLong></FaArrowRightLong>
+                                  </p>
+                                </div>
                               </div>
                             </div>
+                            <h4 className="potraitBottomText rounded-[15px] text-center">
+                            Golden Heart
+                            </h4>
                           </div>
-                          {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
                         </div>
-                      </div>
-                    </Link>
+                      </Link>
 
                     {/* ==========card Two ====== */}
-                    <Link to="https://integrityqualitycare.com/" target="_blank">
-                      <div className="relative cursor-pointer">
-                        <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                          <div >
-                            <div className="PortraitImgOne ">
-                              <img className="h-full w-full object-cover" src="/integrity.jpg" alt="" />
-                            </div>
-                            <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                              <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                <h5 className="overlayText">View Website</h5>
-                                <p><FaArrowRightLong></FaArrowRightLong></p>
+                    <Link>
+                        <div className="relative cursor-pointer ">
+                          <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
+                            <div>
+                              <div className="PortraitImgOne ">
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/optimal-health.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                                <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                                  {/* <h5 className="overlayText">View Website</h5> */}
+                                  <p>
+                                    <FaArrowRightLong></FaArrowRightLong>
+                                  </p>
+                                </div>
                               </div>
                             </div>
+                            <h4 className="potraitBottomText rounded-[15px] text-center">
+                            Optimal Health
+                            </h4>
                           </div>
-                          {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
                         </div>
-                      </div>
-                    </Link>
+                      </Link>
+
+
                     {/* ==========card Three ====== */}
-                    <Link to="https://goshenhservices.com/" target="_blank">
-                      <div className="relative cursor-pointer">
-                        <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                          <div >
-                            <div className="PortraitImgOne ">
-                              <img className="h-full w-full object-cover" src="/goshen.jpg" alt="" />
-                            </div>
-                            <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                              <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                <h5 className="overlayText">View Website</h5>
-                                <p><FaArrowRightLong></FaArrowRightLong></p>
-                              </div>
-                            </div>
-                          </div>
-                          {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                        </div>
-                      </div>
-                    </Link>
+                    
+                   
 
 
 
@@ -1106,6 +1266,8 @@ const PortFolioBranding = () => {
               </TabPanel>
 
               {/* -----------------------Non-Profit ------------------ */}
+              {/* -----------------------non profit sorting ------------------ */}
+              
               <TabPanel>
                 <div className="hidden md:block lg:block xl:block 2xl:block 2xl:pt-[100px] xl:pt-[50px] lg:pt-[50px] md:pt-[30px]">
                   <div className="
@@ -1123,21 +1285,29 @@ const PortFolioBranding = () => {
 
                       {/* ==========card One ====== */}
                       <Zoom>
-                        <Link to="https://eyffa.org/" target="_blank">
+                      <Link>
                           <div className="relative cursor-pointer">
                             <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                              <div >
+                              <div>
                                 <div className="PortraitImgOne ">
-                                  <img className="h-full w-full object-cover" src="/non1.webp" alt="" />
+                                  <img
+                                    className="h-full w-full object-cover"
+                                    src="/ifrah-jamah.jpg"
+                                    alt=""
+                                  />
                                 </div>
                                 <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                   <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                    <h5 className="overlayText">View Website</h5>
-                                    <p><FaArrowRightLong></FaArrowRightLong></p>
+                                    <h5 className="overlayText">View More</h5>
+                                    <p>
+                                      <FaArrowRightLong></FaArrowRightLong>
+                                    </p>
                                   </div>
                                 </div>
                               </div>
-                              {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                              <h4 className="potraitBottomText rounded-[15px] text-center">
+                              Ifrah Jamah
+                              </h4>
                             </div>
                           </div>
                         </Link>
@@ -1145,21 +1315,29 @@ const PortFolioBranding = () => {
 
                       {/* ==========card Two ====== */}
                       <Zoom>
-                        <Link to="https://islamcollective.org/" target="_blank">
+                      <Link>
                           <div className="relative cursor-pointer">
                             <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                              <div >
+                              <div>
                                 <div className="PortraitImgOne ">
-                                  <img className="h-full w-full object-cover" src="/non2.webp" alt="" />
+                                  <img
+                                    className="h-full w-full object-cover"
+                                    src="/mak-community.png"
+                                    alt=""
+                                  />
                                 </div>
                                 <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                   <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                    <h5 className="overlayText">View Website</h5>
-                                    <p><FaArrowRightLong></FaArrowRightLong></p>
+                                    <h5 className="overlayText">View More</h5>
+                                    <p>
+                                      <FaArrowRightLong></FaArrowRightLong>
+                                    </p>
                                   </div>
                                 </div>
                               </div>
-                              {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                              <h4 className="potraitBottomText rounded-[15px] text-center">
+                              Mak Community
+                              </h4>
                             </div>
                           </div>
                         </Link>
@@ -1167,21 +1345,87 @@ const PortFolioBranding = () => {
 
                       {/* ==========card Three ====== */}
                       <Zoom>
-                        <Link to="https://washingtontoe.com/" target="_blank">
+                      <Link>
                           <div className="relative cursor-pointer">
                             <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                              <div >
+                              <div>
                                 <div className="PortraitImgOne ">
-                                  <img className="h-full w-full object-cover" src="/non3.webp" alt="" />
+                                  <img
+                                    className="h-full w-full object-cover"
+                                    src="/rondo-adult-service.jpg"
+                                    alt=""
+                                  />
                                 </div>
                                 <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                   <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                    <h5 className="overlayText">View Website</h5>
-                                    <p><FaArrowRightLong></FaArrowRightLong></p>
+                                    <h5 className="overlayText">View More</h5>
+                                    <p>
+                                      <FaArrowRightLong></FaArrowRightLong>
+                                    </p>
                                   </div>
                                 </div>
                               </div>
-                              {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                              <h4 className="potraitBottomText rounded-[15px] text-center">
+                              Rondo Adult DayServices
+                              </h4>
+                            </div>
+                          </div>
+                        </Link>
+                      </Zoom>
+                      {/* ==========card Four ====== */}
+                      <Zoom>
+                      <Link>
+                          <div className="relative cursor-pointer mt-4">
+                            <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
+                              <div>
+                                <div className="PortraitImgOne ">
+                                  <img
+                                    className="h-full w-full object-cover"
+                                    src="/islam-collective.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                                  <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                                    <h5 className="overlayText">View More</h5>
+                                    <p>
+                                      <FaArrowRightLong></FaArrowRightLong>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <h4 className="potraitBottomText rounded-[15px] text-center">
+                              Islam Collective
+                              </h4>
+                            </div>
+                          </div>
+                        </Link>
+                      </Zoom>
+                      {/* ==========card Five ====== */}
+                      <Zoom>
+                      <Link>
+                          <div className="relative cursor-pointer mt-4">
+                            <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
+                              <div>
+                                <div className="PortraitImgOne ">
+                                  <img
+                                    className="h-full w-full object-cover"
+                                    src="/admed-sse.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                                  <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                                    <h5 className="overlayText">View More</h5>
+                                    <p>
+                                      <FaArrowRightLong></FaArrowRightLong>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <h4 className="potraitBottomText rounded-[15px] text-center">
+                              Awad For Puntland
+                              </h4>
                             </div>
                           </div>
                         </Link>
@@ -1200,63 +1444,143 @@ const PortFolioBranding = () => {
 
                   <Slider {...settings} >
                     {/* ==========card One ====== */}
-                    <Link to="https://eyffa.org/" target="_blank">
-                      <div className="relative cursor-pointer ">
-                        <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                          <div >
-                            <div className="PortraitImgOne ">
-                              <img className="h-full w-full object-cover" src="/non1.webp" alt="" />
-                            </div>
-                            <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                              <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                <h5 className="overlayText">View Website</h5>
-                                <p><FaArrowRightLong></FaArrowRightLong></p>
+                    {/* <Link to="https://eyffa.org/" target="_blank"> */}
+                    <Link>
+                        <div className="relative cursor-pointer ">
+                          <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
+                            <div>
+                              <div className="PortraitImgOne ">
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/ifrah-jamah.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                                <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                                  {/* <h5 className="overlayText">View Website</h5> */}
+                                  <p>
+                                    <FaArrowRightLong></FaArrowRightLong>
+                                  </p>
+                                </div>
                               </div>
                             </div>
+                            <h4 className="potraitBottomText rounded-[15px] text-center">
+                            Ifrah Jamah
+                            </h4>
                           </div>
-                          {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
                         </div>
-                      </div>
-                    </Link>
+                      </Link>
+                    {/* </Link> */}
 
                     {/* ==========card Two ====== */}
-                    <Link to="https://islamcollective.org/" target="_blank">
-                      <div className="relative cursor-pointer">
-                        <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                          <div >
-                            <div className="PortraitImgOne ">
-                              <img className="h-full w-full object-cover" src="/non2.webp" alt="" />
-                            </div>
-                            <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                              <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                <h5 className="overlayText">View Website</h5>
-                                <p><FaArrowRightLong></FaArrowRightLong></p>
+                    <Link>
+                        <div className="relative cursor-pointer ">
+                          <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
+                            <div>
+                              <div className="PortraitImgOne ">
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/mak-community.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                                <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                                  {/* <h5 className="overlayText">View Website</h5> */}
+                                  <p>
+                                    <FaArrowRightLong></FaArrowRightLong>
+                                  </p>
+                                </div>
                               </div>
                             </div>
+                            <h4 className="potraitBottomText rounded-[15px] text-center">
+                            Mak Community
+                            </h4>
                           </div>
-                          {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
                         </div>
-                      </div>
-                    </Link>
+                      </Link>
                     {/* ==========card Three ====== */}
-                    <Link to="https://washingtontoe.com/" target="_blank">
-                      <div className="relative cursor-pointer">
-                        <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                          <div >
-                            <div className="PortraitImgOne ">
-                              <img className="h-full w-full object-cover" src="/non3.webp" alt="" />
-                            </div>
-                            <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                              <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                <h5 className="overlayText">View Website</h5>
-                                <p><FaArrowRightLong></FaArrowRightLong></p>
+                    <Link>
+                        <div className="relative cursor-pointer ">
+                          <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
+                            <div>
+                              <div className="PortraitImgOne ">
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/rondo-adult-service.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                                <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                                  {/* <h5 className="overlayText">View Website</h5> */}
+                                  <p>
+                                    <FaArrowRightLong></FaArrowRightLong>
+                                  </p>
+                                </div>
                               </div>
                             </div>
+                            <h4 className="potraitBottomText rounded-[15px] text-center">
+                            Rondo Adult DayServices
+                            </h4>
                           </div>
-                          {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
                         </div>
-                      </div>
-                    </Link>
+                      </Link>
+                    {/* ==========card Four ====== */}
+                    <Link>
+                        <div className="relative cursor-pointer ">
+                          <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
+                            <div>
+                              <div className="PortraitImgOne ">
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/islam-collective.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                                <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                                  {/* <h5 className="overlayText">View Website</h5> */}
+                                  <p>
+                                    <FaArrowRightLong></FaArrowRightLong>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <h4 className="potraitBottomText rounded-[15px] text-center">
+                            Islam Collective
+                            </h4>
+                          </div>
+                        </div>
+                      </Link>
+                    {/* ==========card Five ====== */}
+                    <Link>
+                        <div className="relative cursor-pointer ">
+                          <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
+                            <div>
+                              <div className="PortraitImgOne ">
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/admed-sse.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                                <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                                  {/* <h5 className="overlayText">View Website</h5> */}
+                                  <p>
+                                    <FaArrowRightLong></FaArrowRightLong>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <h4 className="potraitBottomText rounded-[15px] text-center">
+                            Awad For Puntland
+                            </h4>
+                          </div>
+                        </div>
+                      </Link>
 
 
 
@@ -1265,6 +1589,7 @@ const PortFolioBranding = () => {
               </TabPanel>
 
               {/* -----------------------Restaurants ------------------ */}
+              {/* -----------------------Restaurants sorting ------------------ */}
               <TabPanel>
                 <div className="hidden md:block lg:block xl:block 2xl:block 2xl:pt-[100px] xl:pt-[50px] lg:pt-[50px] md:pt-[30px]">
                   <div className="
@@ -1282,21 +1607,30 @@ const PortFolioBranding = () => {
 
                       {/* ==========card One ====== */}
                       <Zoom>
-                        <Link to='https://almasirestaurant.com/' target="_blank">
+                        {/* <Link to='https://almasirestaurant.com/' target="_blank"> */}
+                        <Link>
                           <div className="relative cursor-pointer">
                             <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                              <div >
+                              <div>
                                 <div className="PortraitImgOne ">
-                                  <img className="h-full w-full object-cover" src="/almasi.jpg" alt="" />
+                                  <img
+                                    className="h-full w-full object-cover"
+                                    src="/caweys-lounge.png"
+                                    alt=""
+                                  />
                                 </div>
                                 <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                   <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                    <h5 className="overlayText">View Website</h5>
-                                    <p><FaArrowRightLong></FaArrowRightLong></p>
+                                    <h5 className="overlayText">View More</h5>
+                                    <p>
+                                      <FaArrowRightLong></FaArrowRightLong>
+                                    </p>
                                   </div>
                                 </div>
                               </div>
-                              {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                              <h4 className="potraitBottomText rounded-[15px] text-center">
+                              Caweys Lounge
+                              </h4>
                             </div>
                           </div>
                         </Link>
@@ -1305,49 +1639,36 @@ const PortFolioBranding = () => {
                       {/* ==========card Two ====== */}
 
                       <Zoom>
-                        <Link to="http://caweyslounge.com/" target="_blank">
-
+                      <Link>
                           <div className="relative cursor-pointer">
                             <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                              <div >
+                              <div>
                                 <div className="PortraitImgOne ">
-                                  <img className="h-full w-full object-cover" src="/cawes.jpg" alt="" />
+                                  <img
+                                    className="h-full w-full object-cover"
+                                    src="/feuling-education.jpg"
+                                    alt=""
+                                  />
                                 </div>
                                 <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                   <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                    <h5 className="overlayText">View Website</h5>
-                                    <p><FaArrowRightLong></FaArrowRightLong></p>
+                                    <h5 className="overlayText">View More</h5>
+                                    <p>
+                                      <FaArrowRightLong></FaArrowRightLong>
+                                    </p>
                                   </div>
                                 </div>
                               </div>
-                              {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                              <h4 className="potraitBottomText rounded-[15px] text-center">
+                              Lux Catering
+                              </h4>
                             </div>
                           </div>
                         </Link>
                       </Zoom>
 
                       {/* ==========card Three ====== */}
-                      <Zoom>
-
-                        <Link to="https://capitolcafe.com/" target="_blank">
-                          <div className="relative cursor-pointer">
-                            <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                              <div >
-                                <div className="PortraitImgOne ">
-                                  <img className="h-full w-full object-cover" src="/capitol.jpg" alt="" />
-                                </div>
-                                <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                                  <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                    <h5 className="overlayText">View Website</h5>
-                                    <p><FaArrowRightLong></FaArrowRightLong></p>
-                                  </div>
-                                </div>
-                              </div>
-                              {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                            </div>
-                          </div>
-                        </Link>
-                      </Zoom>
+                      
 
                     </div>
 
@@ -1362,64 +1683,63 @@ const PortFolioBranding = () => {
                   <Slider {...settings} >
                     {/* ==========card One ====== */}
 
-                    <Link to="https://almasirestaurant.com/" target="_blank" >
-                      <div className="relative cursor-pointer ">
-                        <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                          <div >
-                            <div className="PortraitImgOne ">
-                              <img className="h-full w-full object-cover" src="/almasi.jpg" alt="" />
-                            </div>
-                            <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                              <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                <h5 className="overlayText">View Website</h5>
-                                <p><FaArrowRightLong></FaArrowRightLong></p>
+                    <Link>
+                        <div className="relative cursor-pointer ">
+                          <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
+                            <div>
+                              <div className="PortraitImgOne ">
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/caweys-lounge.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                                <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                                  {/* <h5 className="overlayText">View Website</h5> */}
+                                  <p>
+                                    <FaArrowRightLong></FaArrowRightLong>
+                                  </p>
+                                </div>
                               </div>
                             </div>
+                            <h4 className="potraitBottomText rounded-[15px] text-center">
+                            Caweys Lounge
+                            </h4>
                           </div>
-                          {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
                         </div>
-                      </div>
-                    </Link>
+                      </Link>
 
                     {/* ==========card Two ====== */}
-                    <Link to="http://caweyslounge.com/" target="_blank" >
-                      <div className="relative cursor-pointer">
-                        <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                          <div >
-                            <div className="PortraitImgOne ">
-                              <img className="h-full w-full object-cover" src="/cawes.jpg" alt="" />
-                            </div>
-                            <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                              <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                <h5 className="overlayText">View Website</h5>
-                                <p><FaArrowRightLong></FaArrowRightLong></p>
+                    <Link>
+                        <div className="relative cursor-pointer ">
+                          <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
+                            <div>
+                              <div className="PortraitImgOne ">
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/feuling-education.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                                <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                                  {/* <h5 className="overlayText">View Website</h5> */}
+                                  <p>
+                                    <FaArrowRightLong></FaArrowRightLong>
+                                  </p>
+                                </div>
                               </div>
                             </div>
+                            <h4 className="potraitBottomText rounded-[15px] text-center">
+                            Lux Catering
+                            </h4>
                           </div>
-                          {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
                         </div>
-                      </div>
-                    </Link>
+                      </Link>
 
                     {/* ==========card Three ====== */}
-                    <Link to="https://capitolcafe.com/" target="_blank">
-                      <div className="relative cursor-pointer">
-                        <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                          <div >
-                            <div className="PortraitImgOne ">
-                              <img className="h-full w-full object-cover" src="/capitol.jpg" alt="" />
-                            </div>
-                            <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                              <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                                <h5 className="overlayText">View Website</h5>
-                                <p><FaArrowRightLong></FaArrowRightLong></p>
-                              </div>
-                            </div>
-                          </div>
-                          {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                        </div>
-                      </div>
-                    </Link>
+                    
 
 
 

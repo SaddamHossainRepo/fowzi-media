@@ -14,7 +14,6 @@ import { useEffect, useState } from "react";
 
 const PortFolioVideoCOFMHD = () => {
   const [showContact, setShowContact] = useState(false);
-
   // For contact button functions
 
   const adjustTextareaHeightContact = (element) => {
@@ -210,15 +209,18 @@ const PortFolioVideoCOFMHD = () => {
           </p>
           <div className="">
             {/* <h4 className="titleSubHeading pb-[30px]">Bike Video For COFMHD</h4> */}
-            <h4 className="titleSubHeading pb-[30px]">Islam Collective Introduction Video</h4>
+            <h4 className="titleSubHeading pb-[30px]">
+              Islam Collective Introduction Video
+            </h4>
             {/* <p className="cardBaseText 2xl:pb-[60px] xl:pb-[50px] lg:pb-[40px] md:pb-[40px] pb-[20px]">Author: Lorem ipsum dolor sit amet.</p> */}
             <div className="">
               {/* <img className="xl:h-[500px] xl:w-full object-cover xl:rounded-[25px]" src="/videoGraphyDetails.png" alt="" /> */}
 
               <div className="w-[100%] xl:h-[500px] 2xl:h-[700px] lg:h-[400px] md:h-[300px] h-[200px]">
+                
                 <iframe
                   title="vimeo-player"
-                //   src="https://player.vimeo.com/video/298952346?h=cd402cb70e"
+                  //   src="https://player.vimeo.com/video/298952346?h=cd402cb70e"
                   src="https://player.vimeo.com/video/943716954?h=12bc512b27"
                   className="w-full h-full"
                   frameBorder="0"
