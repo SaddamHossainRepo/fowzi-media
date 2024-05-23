@@ -16,6 +16,7 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { Fade, Zoom as RevealZoom } from "react-awesome-reveal";
 
 const PortFolioPhotography = () => {
   var settings = {
@@ -296,10 +297,11 @@ const PortFolioPhotography = () => {
           <TabList
             className="
               bg-transparent grid justify-between grid-cols-2 items-center gap-y-[30px] 
-              2xl:flex 2xl:gap-[20px] 2xl:justify-start
-              xl:flex xl:gap-[10px] xl:justify-start
-              lg:flex lg:gap-[10px] lg:justify-start
-              md:flex md:gap-[10px] md:justify-start
+              2xl:flex 2xl:gap-[20px] 2xl:justify-start  2xl:px-[145px]
+              xl:flex xl:gap-[10px] xl:justify-start xl:px-[70px]
+              lg:flex lg:gap-[10px] lg:justify-start lg:px-[62px]
+              md:flex md:gap-[10px] md:justify-start md:px-[40px]
+              flex md:gap-[10px] justify-start px-[10px]
 
                "
           >
@@ -320,590 +322,15 @@ const PortFolioPhotography = () => {
             </Tab>
             <Tab>
               <h2 className="titleSubHeadingEdited 2xl:pb-[10px] xl:pb-[5px] lg:pb-[3px] md:pb-[2px] pb-[2px]">
-                Family
+                Events
               </h2>
             </Tab>
           </TabList>
-            {/* All sections */}
-            <TabPanel>
-              {/* ==========Potrait sections ======= */}
-          <div className="leftRightCommon text-white">
-            <h2 className="titleSubHeading">Potrait</h2>
-            <div className="hidden md:block lg:block xl:block 2xl:block">
-              <div
-                className="
-                       
-                       flex justify-center items-center xl:gap-x-[30px] 2xl:gap-x-[50px]  lg:gap-x-[25px] md:gap-x-[15px]
-                       "
-              >
-                <div>
-                  <FaArrowLeftLong></FaArrowLeftLong>
-                </div>
-                <div
-                  className=" grid 2xl:grid-cols-3 2xl:gap-x-[50px] 
-                           xl:grid-cols-3 xl:gap-x-[30px] 
-                           lg:grid-cols-3 lg:gap-x-[25px]
-                           md:grid-cols-3 md:gap-x-[15px]
-                           justify-between w-full"
-                >
-                  {/* ==========card One ====== */}
-
-                  <div className="relative cursor-pointer">
-                    <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                      <div>
-                        <div className="PortraitImgOne ">
-                          <Zoom>
-                            <img
-                              className="h-full w-full object-cover"
-                              src="/portfolioPhotography/portrait.jpg"
-                              alt=""
-                            />
-                          </Zoom>
-                        </div>
-                        {/* Overly */}
-                        {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                          <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                            <h5 className="overlayText">View</h5>
-                            <p>
-                              <FaArrowRightLong></FaArrowRightLong>
-                            </p>
-                          </div>
-                        </div> */}
-                      </div>
-                      {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                    </div>
-                  </div>
-
-                  {/* ==========card Two ====== */}
-
-                  <div className="relative cursor-pointer">
-                    <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                      <div>
-                        <div className="PortraitImgOne ">
-                          <Zoom>
-                            <img
-                              className="h-full w-full object-cover"
-                              src="/portfolioPhotography/portrait4.jpg"
-                              alt=""
-                            />
-                          </Zoom>
-                        </div>
-                        {/* overly */}
-                        {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                          <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                            <h5 className="overlayText">View</h5>
-                            <p>
-                              <FaArrowRightLong></FaArrowRightLong>
-                            </p>
-                          </div>
-                        </div> */}
-                      </div>
-                      {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                    </div>
-                  </div>
-
-                  {/* ==========card Three ====== */}
-
-                  <div className="relative cursor-pointer">
-                    <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                      <div>
-                        <div className="PortraitImgOne ">
-                          <Zoom>
-                            <img
-                              className="h-full w-full object-cover"
-                              src="/portfolioPhotography/portrait3.jpg"
-                              alt=""
-                            />
-                          </Zoom>
-                        </div>
-                        {/* overly */}
-                        {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                          <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                            <h5 className="overlayText">View</h5>
-                            <p>
-                              <FaArrowRightLong></FaArrowRightLong>
-                            </p>
-                          </div>
-                        </div> */}
-                      </div>
-                      {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <FaArrowRightLong></FaArrowRightLong>
-                </div>
-              </div>
-            </div>
-            {/* small device */}
-            <div className="block md:hidden lg:hidden xl:hidden 2xl:hidden">
-              <Slider {...settings}>
-                {/* ==========card One ====== */}
-                <div className="relative cursor-pointer ">
-                  <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                    <div>
-                      <div className="PortraitImgOne ">
-                        <Zoom>
-                          <img
-                            className="h-full w-full object-cover"
-                            src="/portfolioPhotography/portrait.jpg"
-                            alt=""
-                          />
-                        </Zoom>
-                      </div>
-                      {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                        <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                          <h5 className="overlayText">View</h5>
-                          <p>
-                            <FaArrowRightLong></FaArrowRightLong>
-                          </p>
-                        </div>
-                      </div> */}
-                    </div>
-                    {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                  </div>
-                </div>
-
-                {/* ==========card Two ====== */}
-                <div className="relative cursor-pointer">
-                  <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                    <div>
-                      <div className="PortraitImgOne ">
-                        <Zoom>
-                          <img
-                            className="h-full w-full object-cover"
-                            src="/portfolioPhotography/portrait4.jpg"
-                            alt=""
-                          />
-                        </Zoom>
-                      </div>
-                      {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                        <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                          <h5 className="overlayText">View</h5>
-                          <p>
-                            <FaArrowRightLong></FaArrowRightLong>
-                          </p>
-                        </div>
-                      </div> */}
-                    </div>
-                    {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                  </div>
-                </div>
-                {/* ==========card Three ====== */}
-                <div className="relative cursor-pointer">
-                  <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                    <div>
-                      <div className="PortraitImgOne ">
-                        <Zoom>
-                          <img
-                            className="h-full w-full object-cover"
-                            src="/portfolioPhotography/portrait3.jpg"
-                            alt=""
-                          />
-                        </Zoom>
-                      </div>
-                      {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                        <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                          <h5 className="overlayText">View</h5>
-                          <p>
-                            <FaArrowRightLong></FaArrowRightLong>
-                          </p>
-                        </div>
-                      </div> */}
-                    </div>
-                    {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                  </div>
-                </div>
-              </Slider>
-            </div>
-          </div>
-
-          {/* ============= Product Sections ===========  */}
-
-        <div className="leftRightCommon text-white">
-          <h2 className="titleSubHeading">Product</h2>
-          <div className="hidden md:block lg:block xl:block 2xl:block">
-            <div
-              className="
-                       
-                       flex justify-center items-center xl:gap-x-[30px] 2xl:gap-x-[50px]  lg:gap-x-[25px] md:gap-x-[15px]
-                       "
-            >
-              <div>
-                <FaArrowLeftLong></FaArrowLeftLong>
-              </div>
-              <div
-                className=" grid 2xl:grid-cols-3 2xl:gap-x-[50px] 
-                           xl:grid-cols-3 xl:gap-x-[30px] 
-                           lg:grid-cols-3 lg:gap-x-[25px]
-                           md:grid-cols-3 md:gap-x-[15px]
-                           justify-between w-full"
-              >
-                {/* ==========card One ====== */}
-                <div className="relative cursor-pointer">
-                  <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                    <div>
-                      <div className="PortraitImgOne ">
-                        <Zoom>
-                          <img
-                            className="h-full w-full object-cover"
-                            src="/Artboard4x.png"
-                            alt=""
-                          />
-                        </Zoom>
-                      </div>
-                      {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                        <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                          <h5 className="overlayText">View</h5>
-                          <p>
-                            <FaArrowRightLong></FaArrowRightLong>
-                          </p>
-                        </div>
-                      </div> */}
-                    </div>
-                    {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                  </div>
-                </div>
-
-                {/* ==========card Two ====== */}
-                <div className="relative cursor-pointer">
-                  <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                    <div>
-                      <div className="PortraitImgOne ">
-                        <Zoom>
-                          <img
-                            className="h-full w-full object-cover"
-                            src="/Artboard-1ss.png"
-                            alt=""
-                          />
-                        </Zoom>
-                      </div>
-                      {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                        <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                          <h5 className="overlayText">View</h5>
-                          <p>
-                            <FaArrowRightLong></FaArrowRightLong>
-                          </p>
-                        </div>
-                      </div> */}
-                    </div>
-                    {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                  </div>
-                </div>
-
-                {/* ==========card Three ====== */}
-                <div className="relative cursor-pointer">
-                  <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                    <div>
-                      <div className="PortraitImgOne ">
-                        <Zoom>
-                          <img
-                            className="h-full w-full object-cover"
-                            src="/product3x.jpg"
-                            alt=""
-                          />
-                        </Zoom>
-                      </div>
-                      {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                        <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                          <h5 className="overlayText">View</h5>
-                          <p>
-                            <FaArrowRightLong></FaArrowRightLong>
-                          </p>
-                        </div>
-                      </div> */}
-                    </div>
-                    {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <FaArrowRightLong></FaArrowRightLong>
-              </div>
-            </div>
-          </div>
-
-          <div className="block md:hidden lg:hidden xl:hidden 2xl:hidden">
-            <Slider {...settings}>
-              {/* ==========card One ====== */}
-              <div className="relative cursor-pointer ">
-                <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                  <div>
-                    <div className="PortraitImgOne ">
-                      <Zoom>
-                        <img
-                          className="h-full w-full object-cover"
-                          // src="/portfolioPhotography/Artboard 4@4x.png"
-                          src="/Artboard4x.png"
-                          alt=""
-                        />
-                      </Zoom>
-                    </div>
-                    {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                      <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                        <h5 className="overlayText">View</h5>
-                        <p>
-                          <FaArrowRightLong></FaArrowRightLong>
-                        </p>
-                      </div>
-                    </div> */}
-                  </div>
-                  {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                </div>
-              </div>
-
-              {/* ==========card Two ====== */}
-              <div className="relative cursor-pointer">
-                <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                  <div>
-                    <div className="PortraitImgOne ">
-                      <Zoom>
-                        <img
-                          className="h-full w-full object-cover"
-                          // src="/portfolioPhotography/Artboard 1@4x.png"
-                          src="/Artboard-1ss.png"
-                          alt=""
-                        />
-                      </Zoom>
-                    </div>
-                    {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                      <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                        <h5 className="overlayText">View</h5>
-                        <p>
-                          <FaArrowRightLong></FaArrowRightLong>
-                        </p>
-                      </div>
-                    </div> */}
-                  </div>
-                  {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                </div>
-              </div>
-              {/* ==========card Three ====== */}
-              <div className="relative cursor-pointer">
-                <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                  <div>
-                    <div className="PortraitImgOne ">
-                      <Zoom>
-                        <img
-                          className="h-full w-full object-cover"
-                          src="/product3x.jpg"
-                          alt=""
-                        />
-                      </Zoom>
-                    </div>
-                    {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                      <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                        <h5 className="overlayText">View</h5>
-                        <p>
-                          <FaArrowRightLong></FaArrowRightLong>
-                        </p>
-                      </div>
-                    </div> */}
-                  </div>
-                  {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                </div>
-              </div>
-            </Slider>
-          </div>
-        </div>
-
-        {/* ============= Family Sections ===========  */}
-
-        <div className="leftRightCommon  text-white">
-          <h2 className="titleSubHeading">Family</h2>
-          <div className="hidden md:block lg:block xl:block 2xl:block">
-            <div
-              className="
-                       
-                       flex justify-center items-center xl:gap-x-[30px] 2xl:gap-x-[50px]  lg:gap-x-[25px] md:gap-x-[15px]
-                       "
-            >
-              <div>
-                <FaArrowLeftLong></FaArrowLeftLong>
-              </div>
-              <div
-                className=" grid 2xl:grid-cols-3 2xl:gap-x-[50px] 
-                           xl:grid-cols-3 xl:gap-x-[30px] 
-                           lg:grid-cols-3 lg:gap-x-[25px]
-                           md:grid-cols-3 md:gap-x-[15px]
-                           justify-between w-full"
-              >
-                {/* ==========card One ====== */}
-                <div className="relative cursor-pointer">
-                  <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                    <div>
-                      <div className="PortraitImgOne ">
-                        <Zoom>
-                          <img
-                            className="h-full w-full object-cover"
-                            src="/portfolioPhotography/family.jpg"
-                            alt=""
-                          />
-                        </Zoom>
-                      </div>
-                      {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                        <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                          <h5 className="overlayText">View</h5>
-                          <p>
-                            <FaArrowRightLong></FaArrowRightLong>
-                          </p>
-                        </div>
-                      </div> */}
-                    </div>
-                    {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                  </div>
-                </div>
-
-                {/* ==========card Two ====== */}
-                <div className="relative cursor-pointer">
-                  <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                    <div>
-                      <div className="PortraitImgOne ">
-                        <Zoom>
-                          <img
-                            className="h-full w-full object-cover"
-                            src="/portfolioPhotography/family2.png"
-                            alt=""
-                          />
-                        </Zoom>
-                      </div>
-                      {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                        <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                          <h5 className="overlayText">View</h5>
-                          <p>
-                            <FaArrowRightLong></FaArrowRightLong>
-                          </p>
-                        </div>
-                      </div> */}
-                    </div>
-                    {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                  </div>
-                </div>
-
-                {/* ==========card Three ====== */}
-                <div className="relative cursor-pointer">
-                  <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                    <div>
-                      <div className="PortraitImgOne ">
-                        <Zoom>
-                          <img
-                            className="h-full w-full object-cover"
-                            src="/portfolioPhotography/family3.png"
-                            alt=""
-                          />
-                        </Zoom>
-                      </div>
-                      {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                        <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                          <h5 className="overlayText">View</h5>
-                          <p>
-                            <FaArrowRightLong></FaArrowRightLong>
-                          </p>
-                        </div>
-                      </div> */}
-                    </div>
-                    {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <FaArrowRightLong></FaArrowRightLong>
-              </div>
-            </div>
-          </div>
-
-          <div className="block md:hidden lg:hidden xl:hidden 2xl:hidden">
-            <Slider {...settings}>
-              {/* ==========card One ====== */}
-              <div className="relative cursor-pointer ">
-                <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                  <div>
-                    <div className="PortraitImgOne ">
-                      <Zoom>
-                        <img
-                          className="h-full w-full object-cover"
-                          src="/portfolioPhotography/family.jpg"
-                          alt=""
-                        />
-                      </Zoom>
-                    </div>
-                    {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                      <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                        <h5 className="overlayText">View</h5>
-                        <p>
-                          <FaArrowRightLong></FaArrowRightLong>
-                        </p>
-                      </div>
-                    </div> */}
-                  </div>
-                  {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                </div>
-              </div>
-
-              {/* ==========card Two ====== */}
-              <div className="relative cursor-pointer">
-                <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                  <div>
-                    <div className="PortraitImgOne ">
-                      <Zoom>
-                        <img
-                          className="h-full w-full object-cover"
-                          src="/portfolioPhotography/family2.png"
-                          alt=""
-                        />
-                      </Zoom>
-                    </div>
-                    {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                      <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                        <h5 className="overlayText">View</h5>
-                        <p>
-                          <FaArrowRightLong></FaArrowRightLong>
-                        </p>
-                      </div>
-                    </div> */}
-                  </div>
-                  {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                </div>
-              </div>
-              {/* ==========card Three ====== */}
-              <div className="relative cursor-pointer">
-                <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
-                  <div>
-                    <div className="PortraitImgOne ">
-                      <Zoom>
-                        <img
-                          className="h-full w-full object-cover"
-                          src="/portfolioPhotography/family3.png"
-                          alt=""
-                        />
-                      </Zoom>
-                    </div>
-                    {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                      <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
-                        <h5 className="overlayText">View</h5>
-                        <p>
-                          <FaArrowRightLong></FaArrowRightLong>
-                        </p>
-                      </div>
-                    </div> */}
-                  </div>
-                  {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
-                </div>
-              </div>
-            </Slider>
-          </div>
-        </div>
-
-
-            </TabPanel>
-
-          {/* ==========Portrait sections ======= */}
+          {/* All sections */}
           <TabPanel>
-            <div className="leftRightCommon text-white">
-              {/* <h2 className="titleSubHeading">Portrait</h2> */}
+            {/* ==========Potrait sections ======= */}
+            <div className="leftRightCommonEdited text-white">
+              {/* <h2 className="titleSubHeading">Potrait</h2> */}
               <div className="hidden md:block lg:block xl:block 2xl:block">
                 <div
                   className="
@@ -911,9 +338,7 @@ const PortFolioPhotography = () => {
                        flex justify-center items-center xl:gap-x-[30px] 2xl:gap-x-[50px]  lg:gap-x-[25px] md:gap-x-[15px]
                        "
                 >
-                  <div>
-                    <FaArrowLeftLong></FaArrowLeftLong>
-                  </div>
+                  <div>{/* <FaArrowLeftLong></FaArrowLeftLong> */}</div>
                   <div
                     className=" grid 2xl:grid-cols-3 2xl:gap-x-[50px] 
                            xl:grid-cols-3 xl:gap-x-[30px] 
@@ -1004,6 +429,575 @@ const PortFolioPhotography = () => {
                         {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
                       </div>
                     </div>
+                  </div>
+
+                  <div>{/* <FaArrowRightLong></FaArrowRightLong> */}</div>
+                </div>
+              </div>
+              {/* small device */}
+              <div className="block md:hidden lg:hidden xl:hidden 2xl:hidden">
+                <Slider {...settings}>
+                  {/* ==========card One ====== */}
+                  <div className="relative cursor-pointer ">
+                    <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
+                      <div>
+                        <div className="PortraitImgOne ">
+                          <Zoom>
+                            <img
+                              className="h-full w-full object-cover"
+                              src="/portfolioPhotography/portrait.jpg"
+                              alt=""
+                            />
+                          </Zoom>
+                        </div>
+                        {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                        <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                          <h5 className="overlayText">View</h5>
+                          <p>
+                            <FaArrowRightLong></FaArrowRightLong>
+                          </p>
+                        </div>
+                      </div> */}
+                      </div>
+                      {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                    </div>
+                  </div>
+
+                  {/* ==========card Two ====== */}
+                  <div className="relative cursor-pointer">
+                    <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
+                      <div>
+                        <div className="PortraitImgOne ">
+                          <Zoom>
+                            <img
+                              className="h-full w-full object-cover"
+                              src="/portfolioPhotography/portrait4.jpg"
+                              alt=""
+                            />
+                          </Zoom>
+                        </div>
+                        {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                        <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                          <h5 className="overlayText">View</h5>
+                          <p>
+                            <FaArrowRightLong></FaArrowRightLong>
+                          </p>
+                        </div>
+                      </div> */}
+                      </div>
+                      {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                    </div>
+                  </div>
+                  {/* ==========card Three ====== */}
+                  <div className="relative cursor-pointer">
+                    <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
+                      <div>
+                        <div className="PortraitImgOne ">
+                          <Zoom>
+                            <img
+                              className="h-full w-full object-cover"
+                              src="/portfolioPhotography/portrait3.jpg"
+                              alt=""
+                            />
+                          </Zoom>
+                        </div>
+                        {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                        <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                          <h5 className="overlayText">View</h5>
+                          <p>
+                            <FaArrowRightLong></FaArrowRightLong>
+                          </p>
+                        </div>
+                      </div> */}
+                      </div>
+                      {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                    </div>
+                  </div>
+                </Slider>
+              </div>
+            </div>
+
+            {/* ============= Product Sections ===========  */}
+            <Fade direction="up">
+              <div className="leftRightCommonEdited text-white">
+                {/* <h2 className="titleSubHeading">Product</h2> */}
+                <div className="hidden md:block lg:block xl:block 2xl:block">
+                  <div
+                    className="
+                       
+                       flex justify-center items-center xl:gap-x-[30px] 2xl:gap-x-[50px]  lg:gap-x-[25px] md:gap-x-[15px]
+                       "
+                  >
+                    <div>{/* <FaArrowLeftLong></FaArrowLeftLong> */}</div>
+                    <div
+                      className=" grid 2xl:grid-cols-3 2xl:gap-x-[50px] 
+                           xl:grid-cols-3 xl:gap-x-[30px] 
+                           lg:grid-cols-3 lg:gap-x-[25px]
+                           md:grid-cols-3 md:gap-x-[15px]
+                           justify-between w-full"
+                    >
+                      {/* ==========card One ====== */}
+                      <div className="relative cursor-pointer">
+                        <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
+                          <div>
+                            <div className="PortraitImgOne ">
+                              <Zoom>
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/Artboard4x.png"
+                                  alt=""
+                                />
+                              </Zoom>
+                            </div>
+                            {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                        <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                          <h5 className="overlayText">View</h5>
+                          <p>
+                            <FaArrowRightLong></FaArrowRightLong>
+                          </p>
+                        </div>
+                      </div> */}
+                          </div>
+                          {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                        </div>
+                      </div>
+
+                      {/* ==========card Two ====== */}
+                      <div className="relative cursor-pointer">
+                        <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
+                          <div>
+                            <div className="PortraitImgOne ">
+                              <Zoom>
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/Artboard-1ss.png"
+                                  alt=""
+                                />
+                              </Zoom>
+                            </div>
+                            {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                        <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                          <h5 className="overlayText">View</h5>
+                          <p>
+                            <FaArrowRightLong></FaArrowRightLong>
+                          </p>
+                        </div>
+                      </div> */}
+                          </div>
+                          {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                        </div>
+                      </div>
+
+                      {/* ==========card Three ====== */}
+                      <div className="relative cursor-pointer">
+                        <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
+                          <div>
+                            <div className="PortraitImgOne ">
+                              <Zoom>
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/product3x.jpg"
+                                  alt=""
+                                />
+                              </Zoom>
+                            </div>
+                            {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                        <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                          <h5 className="overlayText">View</h5>
+                          <p>
+                            <FaArrowRightLong></FaArrowRightLong>
+                          </p>
+                        </div>
+                      </div> */}
+                          </div>
+                          {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>{/* <FaArrowRightLong></FaArrowRightLong> */}</div>
+                  </div>
+                </div>
+
+                <div className="block md:hidden lg:hidden xl:hidden 2xl:hidden">
+                  <Slider {...settings}>
+                    {/* ==========card One ====== */}
+                    <div className="relative cursor-pointer ">
+                      <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
+                        <div>
+                          <div className="PortraitImgOne ">
+                            <Zoom>
+                              <img
+                                className="h-full w-full object-cover"
+                                // src="/portfolioPhotography/Artboard 4@4x.png"
+                                src="/Artboard4x.png"
+                                alt=""
+                              />
+                            </Zoom>
+                          </div>
+                          {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                      <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                        <h5 className="overlayText">View</h5>
+                        <p>
+                          <FaArrowRightLong></FaArrowRightLong>
+                        </p>
+                      </div>
+                    </div> */}
+                        </div>
+                        {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                      </div>
+                    </div>
+
+                    {/* ==========card Two ====== */}
+                    <div className="relative cursor-pointer">
+                      <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
+                        <div>
+                          <div className="PortraitImgOne ">
+                            <Zoom>
+                              <img
+                                className="h-full w-full object-cover"
+                                // src="/portfolioPhotography/Artboard 1@4x.png"
+                                src="/Artboard-1ss.png"
+                                alt=""
+                              />
+                            </Zoom>
+                          </div>
+                          {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                      <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                        <h5 className="overlayText">View</h5>
+                        <p>
+                          <FaArrowRightLong></FaArrowRightLong>
+                        </p>
+                      </div>
+                    </div> */}
+                        </div>
+                        {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                      </div>
+                    </div>
+                    {/* ==========card Three ====== */}
+                    <div className="relative cursor-pointer">
+                      <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
+                        <div>
+                          <div className="PortraitImgOne ">
+                            <Zoom>
+                              <img
+                                className="h-full w-full object-cover"
+                                src="/product3x.jpg"
+                                alt=""
+                              />
+                            </Zoom>
+                          </div>
+                          {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                      <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                        <h5 className="overlayText">View</h5>
+                        <p>
+                          <FaArrowRightLong></FaArrowRightLong>
+                        </p>
+                      </div>
+                    </div> */}
+                        </div>
+                        {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                      </div>
+                    </div>
+                  </Slider>
+                </div>
+              </div>
+            </Fade>
+
+            {/* ============= Family Sections ===========  */}
+            <Fade direction="up">
+              <div className="leftRightCommonEdited  text-white">
+                {/* <h2 className="titleSubHeading">Family</h2> */}
+                <div className="hidden md:block lg:block xl:block 2xl:block">
+                  <div
+                    className="
+                       
+                       flex justify-center items-center xl:gap-x-[30px] 2xl:gap-x-[50px]  lg:gap-x-[25px] md:gap-x-[15px]
+                       "
+                  >
+                    <div>{/* <FaArrowLeftLong></FaArrowLeftLong> */}</div>
+                    <div
+                      className=" grid 2xl:grid-cols-3 2xl:gap-x-[50px] 
+                           xl:grid-cols-3 xl:gap-x-[30px] 
+                           lg:grid-cols-3 lg:gap-x-[25px]
+                           md:grid-cols-3 md:gap-x-[15px]
+                           justify-between w-full"
+                    >
+                      {/* ==========card One ====== */}
+                      <div className="relative cursor-pointer">
+                        <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
+                          <div>
+                            <div className="PortraitImgOne ">
+                              <Zoom>
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/portfolioPhotography/family.jpg"
+                                  alt=""
+                                />
+                              </Zoom>
+                            </div>
+                            {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                        <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                          <h5 className="overlayText">View</h5>
+                          <p>
+                            <FaArrowRightLong></FaArrowRightLong>
+                          </p>
+                        </div>
+                      </div> */}
+                          </div>
+                          {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                        </div>
+                      </div>
+
+                      {/* ==========card Two ====== */}
+                      <div className="relative cursor-pointer">
+                        <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
+                          <div>
+                            <div className="PortraitImgOne ">
+                              <Zoom>
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/portfolioPhotography/family2.png"
+                                  alt=""
+                                />
+                              </Zoom>
+                            </div>
+                            {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                        <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                          <h5 className="overlayText">View</h5>
+                          <p>
+                            <FaArrowRightLong></FaArrowRightLong>
+                          </p>
+                        </div>
+                      </div> */}
+                          </div>
+                          {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                        </div>
+                      </div>
+
+                      {/* ==========card Three ====== */}
+                      <div className="relative cursor-pointer">
+                        <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
+                          <div>
+                            <div className="PortraitImgOne ">
+                              <Zoom>
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/portfolioPhotography/family3.png"
+                                  alt=""
+                                />
+                              </Zoom>
+                            </div>
+                            {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                        <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                          <h5 className="overlayText">View</h5>
+                          <p>
+                            <FaArrowRightLong></FaArrowRightLong>
+                          </p>
+                        </div>
+                      </div> */}
+                          </div>
+                          {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>{/* <FaArrowRightLong></FaArrowRightLong> */}</div>
+                  </div>
+                </div>
+
+                <div className="block md:hidden lg:hidden xl:hidden 2xl:hidden">
+                  <Slider {...settings}>
+                    {/* ==========card One ====== */}
+                    <div className="relative cursor-pointer ">
+                      <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
+                        <div>
+                          <div className="PortraitImgOne ">
+                            <Zoom>
+                              <img
+                                className="h-full w-full object-cover"
+                                src="/portfolioPhotography/family.jpg"
+                                alt=""
+                              />
+                            </Zoom>
+                          </div>
+                          {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                      <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                        <h5 className="overlayText">View</h5>
+                        <p>
+                          <FaArrowRightLong></FaArrowRightLong>
+                        </p>
+                      </div>
+                    </div> */}
+                        </div>
+                        {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                      </div>
+                    </div>
+
+                    {/* ==========card Two ====== */}
+                    <div className="relative cursor-pointer">
+                      <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
+                        <div>
+                          <div className="PortraitImgOne ">
+                            <Zoom>
+                              <img
+                                className="h-full w-full object-cover"
+                                src="/portfolioPhotography/family2.png"
+                                alt=""
+                              />
+                            </Zoom>
+                          </div>
+                          {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                      <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                        <h5 className="overlayText">View</h5>
+                        <p>
+                          <FaArrowRightLong></FaArrowRightLong>
+                        </p>
+                      </div>
+                    </div> */}
+                        </div>
+                        {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                      </div>
+                    </div>
+                    {/* ==========card Three ====== */}
+                    <div className="relative cursor-pointer">
+                      <div className=" border-[1px] rounded-[15px]  relative overflow-hidden">
+                        <div>
+                          <div className="PortraitImgOne ">
+                            <Zoom>
+                              <img
+                                className="h-full w-full object-cover"
+                                src="/portfolioPhotography/family3.png"
+                                alt=""
+                              />
+                            </Zoom>
+                          </div>
+                          {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                      <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                        <h5 className="overlayText">View</h5>
+                        <p>
+                          <FaArrowRightLong></FaArrowRightLong>
+                        </p>
+                      </div>
+                    </div> */}
+                        </div>
+                        {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                      </div>
+                    </div>
+                  </Slider>
+                </div>
+              </div>
+            </Fade>
+          </TabPanel>
+
+          {/* ==========Portrait sections ======= */}
+
+          <TabPanel>
+            <div className="leftRightCommon text-white">
+              {/* <h2 className="titleSubHeading">Portrait</h2> */}
+              <div className="hidden md:block lg:block xl:block 2xl:block">
+                <div
+                  className="
+                       
+                       flex justify-center items-center xl:gap-x-[30px] 2xl:gap-x-[50px]  lg:gap-x-[25px] md:gap-x-[15px]
+                       "
+                >
+                  <div>
+                    <FaArrowLeftLong></FaArrowLeftLong>
+                  </div>
+                  <div
+                    className=" grid 2xl:grid-cols-3 2xl:gap-x-[50px] 
+                           xl:grid-cols-3 xl:gap-x-[30px] 
+                           lg:grid-cols-3 lg:gap-x-[25px]
+                           md:grid-cols-3 md:gap-x-[15px]
+                           justify-between w-full"
+                  >
+                    {/* ==========card One ====== */}
+
+                    <RevealZoom>
+                      <div className="relative cursor-pointer">
+                        <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
+                          <div>
+                            <div className="PortraitImgOne ">
+                              <Zoom>
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/portfolioPhotography/portrait.jpg"
+                                  alt=""
+                                />
+                              </Zoom>
+                            </div>
+                            {/* Overly */}
+                            {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                          <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                            <h5 className="overlayText">View</h5>
+                            <p>
+                              <FaArrowRightLong></FaArrowRightLong>
+                            </p>
+                          </div>
+                        </div> */}
+                          </div>
+                          {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                        </div>
+                      </div>
+                    </RevealZoom>
+
+                    {/* ==========card Two ====== */}
+                    <RevealZoom>
+                      <div className="relative cursor-pointer">
+                        <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
+                          <div>
+                            <div className="PortraitImgOne ">
+                              <Zoom>
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/portfolioPhotography/portrait4.jpg"
+                                  alt=""
+                                />
+                              </Zoom>
+                            </div>
+                            {/* overly */}
+                            {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                          <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                            <h5 className="overlayText">View</h5>
+                            <p>
+                              <FaArrowRightLong></FaArrowRightLong>
+                            </p>
+                          </div>
+                        </div> */}
+                          </div>
+                          {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                        </div>
+                      </div>
+                    </RevealZoom>
+                    {/* ==========card Three ====== */}
+                    <RevealZoom>
+                      <div className="relative cursor-pointer">
+                        <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
+                          <div>
+                            <div className="PortraitImgOne ">
+                              <Zoom>
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/portfolioPhotography/portrait3.jpg"
+                                  alt=""
+                                />
+                              </Zoom>
+                            </div>
+                            {/* overly */}
+                            {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                          <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
+                            <h5 className="overlayText">View</h5>
+                            <p>
+                              <FaArrowRightLong></FaArrowRightLong>
+                            </p>
+                          </div>
+                        </div> */}
+                          </div>
+                          {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
+                        </div>
+                      </div>
+                    </RevealZoom>
                   </div>
 
                   <div>
@@ -1117,19 +1111,20 @@ const PortFolioPhotography = () => {
                            justify-between w-full"
                   >
                     {/* ==========card One ====== */}
-                    <div className="relative cursor-pointer">
-                      <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                        <div>
-                          <div className="PortraitImgOne ">
-                            <Zoom>
-                              <img
-                                className="h-full w-full object-cover"
-                                src="/Artboard4x.png"
-                                alt=""
-                              />
-                            </Zoom>
-                          </div>
-                          {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                    <RevealZoom>
+                      <div className="relative cursor-pointer">
+                        <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
+                          <div>
+                            <div className="PortraitImgOne ">
+                              <Zoom>
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/Artboard4x.png"
+                                  alt=""
+                                />
+                              </Zoom>
+                            </div>
+                            {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                         <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
                           <h5 className="overlayText">View</h5>
                           <p>
@@ -1137,25 +1132,26 @@ const PortFolioPhotography = () => {
                           </p>
                         </div>
                       </div> */}
+                          </div>
+                          {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
                         </div>
-                        {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
                       </div>
-                    </div>
-
+                    </RevealZoom>
                     {/* ==========card Two ====== */}
-                    <div className="relative cursor-pointer">
-                      <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                        <div>
-                          <div className="PortraitImgOne ">
-                            <Zoom>
-                              <img
-                                className="h-full w-full object-cover"
-                                src="/Artboard-1ss.png"
-                                alt=""
-                              />
-                            </Zoom>
-                          </div>
-                          {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                    <RevealZoom>
+                      <div className="relative cursor-pointer">
+                        <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
+                          <div>
+                            <div className="PortraitImgOne ">
+                              <Zoom>
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/Artboard-1ss.png"
+                                  alt=""
+                                />
+                              </Zoom>
+                            </div>
+                            {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                         <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
                           <h5 className="overlayText">View</h5>
                           <p>
@@ -1163,25 +1159,26 @@ const PortFolioPhotography = () => {
                           </p>
                         </div>
                       </div> */}
+                          </div>
+                          {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
                         </div>
-                        {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
                       </div>
-                    </div>
-
+                    </RevealZoom>
                     {/* ==========card Three ====== */}
-                    <div className="relative cursor-pointer">
-                      <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
-                        <div>
-                          <div className="PortraitImgOne ">
-                            <Zoom>
-                              <img
-                                className="h-full w-full object-cover"
-                                src="/product3x.jpg"
-                                alt=""
-                              />
-                            </Zoom>
-                          </div>
-                          {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                    <RevealZoom>
+                      <div className="relative cursor-pointer">
+                        <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
+                          <div>
+                            <div className="PortraitImgOne ">
+                              <Zoom>
+                                <img
+                                  className="h-full w-full object-cover"
+                                  src="/product3x.jpg"
+                                  alt=""
+                                />
+                              </Zoom>
+                            </div>
+                            {/* <div className="overlay absolute inset-0 flex justify-center items-center bg-black bg-opacity-70 transition-opacity duration-300 opacity-0 hover:opacity-100">
                         <div className="overlay-content text-white flex flex-col items-center justify-center  rounded-lg">
                           <h5 className="overlayText">View</h5>
                           <p>
@@ -1189,10 +1186,11 @@ const PortFolioPhotography = () => {
                           </p>
                         </div>
                       </div> */}
+                          </div>
+                          {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
                         </div>
-                        {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
                       </div>
-                    </div>
+                    </RevealZoom>
                   </div>
 
                   <div>
@@ -1308,6 +1306,7 @@ const PortFolioPhotography = () => {
                            justify-between w-full"
                   >
                     {/* ==========card One ====== */}
+                    <RevealZoom>
                     <div className="relative cursor-pointer">
                       <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
                         <div>
@@ -1332,8 +1331,9 @@ const PortFolioPhotography = () => {
                         {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
                       </div>
                     </div>
-
+                    </RevealZoom>
                     {/* ==========card Two ====== */}
+                    <RevealZoom>
                     <div className="relative cursor-pointer">
                       <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
                         <div>
@@ -1358,8 +1358,10 @@ const PortFolioPhotography = () => {
                         {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
                       </div>
                     </div>
+                    </RevealZoom>
 
                     {/* ==========card Three ====== */}
+                    <RevealZoom>
                     <div className="relative cursor-pointer">
                       <div className=" border-[4px] rounded-[15px]  relative overflow-hidden">
                         <div>
@@ -1384,6 +1386,7 @@ const PortFolioPhotography = () => {
                         {/* <h4 className="potraitBottomText rounded-[15px] text-center">Lorem</h4> */}
                       </div>
                     </div>
+                    </RevealZoom>
                   </div>
 
                   <div>

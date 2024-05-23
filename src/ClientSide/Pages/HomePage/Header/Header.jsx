@@ -179,10 +179,17 @@ const Header = () => {
                 {" "}
                 <li className="desktopMenu ">PORTFOLIO</li>{" "}
               </ScrollLink>
-              <RouterLink to="/blogs">
+              <ScrollLink
+                to="blog"
+                smooth={true}
+                duration={900}
+                offset={150}
+              >
+              {/* <RouterLink to="/blogs"> */}
                 {" "}
                 <li className=" desktopMenu">CASE STUDIES</li>{" "}
-              </RouterLink>
+              {/* </RouterLink> */}
+              </ScrollLink>
               <ScrollLink to="contact">
                 {" "}
                 <li className="cursor-pointer" onClick={contactBtn}>

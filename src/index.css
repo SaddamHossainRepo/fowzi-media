@@ -44,6 +44,13 @@ input[type=number] {
     md:px-[50px] md:pt-[50px]
     px-[20px] pt-[50px];
   }
+  .leftRightCommonEdited{
+    @apply 2xl:px-[90px] 2xl:pt-[100px] 
+    xl:px-[50px] xl:pt-[100px]
+    lg:px-[40px] lg:pt-[60px]
+    md:px-[36px] md:pt-[50px]
+    px-[20px] pt-[50px];
+  }
 
   .titleSubHeading {
     @apply 2xl:text-[50px] 2xl:leading-[60px] 2xl:pb-[60px] 
